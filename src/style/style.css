@@ -1,0 +1,89 @@
+/* \-\-\-\-\-\-\-\-\-\ RESET /-/-/-/-/-/-/-/-/-/ */
+
+body, h1, h2, h3, ul {
+    display: initial;
+    margin: initial;
+    padding: initial;
+    font-size: initial;
+    margin-block-start: initial;
+    margin-block-end: initial;
+    margin-inline-start: initial;
+    margin-inline-end: initial;
+    font-weight: initial;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: initial;
+}
+
+.site__wrapper {    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .site__wrapper {     
+        margin-left: 15px;
+        margin-right: 15px; 
+    }
+}
+
+
+/* \-\-\-\-\-\-\-\-\-\ FONT /-/-/-/-/-/-/-/-/-/ */
+
+@font-face {
+    font-family: "Chronicle Display";
+    src: url("../assets/fonts/chronicle-display.otf") format("otf");   
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../assets/fonts/gilroy.otf") format("otf");   
+}
+
+
+/* \-\-\-\-\-\-\-\-\-\ GENERAL /-/-/-/-/-/-/-/-/-/ */
+
+.App {
+    color: #ffffff;
+    background: #0B1D26;
+}
+
+.color__background {
+    position: absolute;
+    width: 100%;
+    height: 45vh;
+    left: 0px;
+    top: -210px;
+    background: linear-gradient(180deg,rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
+
+    z-index: -1;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: #ffffff;
+}
+
+
+/* \-\-\-\-\-\-\-\-\-\ INTRO  /-/-/-/-/-/-/-/-/-/ */
+
+.intro :first-child {
+    vertical-align: inherit;
+}
+
+/* \-\-\-\-\-\-\-\-\-\ SECTIONS 2 REVERSE  /-/-/-/-/-/-/-/-/-/ */
+
+.image-container-reverse {
+    order: -1;
+}
+
+@media (max-width: 900px){
+    .image-container-reverse {
+        order: 1;
+    }
+}
